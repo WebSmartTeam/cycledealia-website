@@ -58,8 +58,20 @@ cp ../../shared-resources/design-dna/templates/cycling/ProductShowcase.tsx websi
 - Expert bike fitting services
 - Performance-focused messaging
 
+## 🚀 GIT DEPLOYMENT PROTOCOL
+**MANDATORY DEPLOYMENT TARGET:**
+```bash
+# Always push to WebSmartTeam organization
+git remote set-url origin https://anish:[GITHUB_TOKEN]@github.com/WebSmartTeam/[PROJECT_NAME].git
+git push -u origin main
+```
+
+**Current Repository:** https://github.com/WebSmartTeam/cycledealia-website
+**Never push to personal accounts - always use WebSmartTeam organization**
+**GitHub token is configured in master farm credentials**
+
 ## CAPABILITIES
-- Git push enabled
+- Git push enabled (WebSmartTeam access configured)
 - A+ Grade DNA injection ready
 - MCP tools available
 - Multi-platform organization
