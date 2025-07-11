@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-dark: #0B2C3D;
+  --accent-yellow: #FFC72C;
+  --background: #F5F5F5;
+  --text-body: #2C2C2C;
+  --link-cta: #007BBA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--text-body);
+  background-color: var(--background);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Matte flat design - no shadows, gradients, or glows */
+.btn-primary {
+  @apply bg-accent-yellow text-primary-dark font-semibold px-6 py-3 rounded-none border-none;
+  transition: opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  @apply bg-link-cta text-white font-semibold px-6 py-3 rounded-none border-none;
+  transition: opacity 0.2s ease;
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+/* Clean, flat card design */
+.card {
+  @apply bg-white border border-gray-200 rounded-none p-6;
+}
+
+/* No shadows, flat design */
+.no-shadow {
+  box-shadow: none !important;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-dark);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--link-cta);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
